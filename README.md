@@ -11,5 +11,17 @@ Seen WiFi Networks: 31,835
 Discovered Cells with GPS: 276
 Seen Cells: 296
 
-*For the sake of not DOXING myself, I will not include the powerpoint within this git repository.*
+As of Feb 4th, 2020; I have:
+Discovered WiFi + GPS: 136,728
+Seen WiFi Networks: 266,509
+Discovered Cell + GPS: 3249
+Seen Cell: 5335
+Discovered BT + GPS: 95844
+Seen BT: 97269
 
+This link is to a badge tracking my current stat for "Discovered WiFi with GPS":
+https://wigle.net/bi/Uok16Vpt70SFieIOssTefw.png
+
+*For the sake of not DOXING myself, I will not include the powerpoint within this git repository.*
+**Discovered meaning first WiGLE user to Upload data about the network.
+***I only scan for Bluetooth devices with an older Tablet Device.
