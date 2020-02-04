@@ -1,0 +1,35 @@
+Wardriving on Android was throttled by an Android Update which places a hard cap on Applications attempting to run scans. This was a security patch.
+
+User applications can not scan as often as they want anymore and it will not be fixed within Android anytime soon. https://wigle.net/phpbb/viewtopic.php?t=2669
+Unfortunately the current workarounds for updated versions of Android involve rooting the device for access to developer features, an option which I cannot settle for. 
+
+----
+
+I am considering using a Raspberry Pi Zero W to bypass the throttling.
+As this is an Android issue, Raspbian and other ARM based Operating systems should be unaffected.
+
+There exist ‘GPS Passthrough’ applications which are used to allow Android Devices to function as a USB based GPS chip for use by another device.
+However, it is likely that this is also throttled in a similar way to WiFi scanning; therefore an actual USB/GPIO <based> GPS Dongle would be more fruitful and require fewer powered devices. (Just power the Pi Zero W, rather than a Pi && an Android feeding it a GPS Signal.)
+How much do these chips cost and what is the user experience like configuring them? (Scripts) 
+
+A Monitor Mode capable wireless interface card can be used to obtain more data. 
+(Client devices in addition to the Access Points.)
+
+Does WiGLE fully support storage of all KML format data or will I NEED to keep my own backup for client data. 
+(Should be keeping a backup anyway but is WiGLE going to truncate my uploaded data sets?)
+
+Scripts to quickly configure scan rates and types, thus adjusting power consumption.
+(More important when operating on battery power.)
+
+BONUS Ideas:
+Software Defined Radio can be included to use as a radar detector and/or methods to attempt to detect OTHER devices which are probing for information. (Find the other war drivers)
+
+Include a small display OR run headlessly OR offer Remote View over its own Network
+
+Platform to access and modify from a local Phone, and/or send notification back to the phone.
+(ie Radar Warning) via Bluetooth? WiFi? Some non-Internet facing Web Server?
+
+LED Warning Light (Cheap GPIO part && more Subtle than an entire display or SFX
+
+**I should rebuild my Amazon driven blog with parts needed for the build.\
+Gateway project has potential to emulate something like CreepyDOL (Creepy Distributed Object Locator) which I viewed in a DefCon Video. <https://blog.ussjoin.com/2013/08/creepydol.html>
