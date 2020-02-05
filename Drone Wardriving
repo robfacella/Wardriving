@@ -1,0 +1,36 @@
+Mulling over plans for substituting out my current wardriving devices, an Android phone and the Android tablet which I use for bluetooth discovery, with a Raspberry Pi.
+
+I began considering building a custom drone for Wardriving.
+
+Years ago I had seen a demo and video presentation, around 2013, for a project run by some security researchers from Stevens Institute. This was 6 or 7 years ago so details may be fuzzy.
+It was a drone linked to a 3G cell signal, controlled via a custom/hacked smartphone application. The drone carried a camera for navigation as well as a stripped down WiFi Pineapple, also accessible through the 3G signal.
+
+Since seeing their quad-copter, I have had the idea burned into my mind and have wanted to build my own. I have never fancied myself an engineer and a fear of destroying, or otherwise losing, expensive hardware had served as a deterrent for investing into a drone in the past. 
+
+My limiting factors had always been primarily budget related however, given that I need to build my own custom WarDriving device presently, splurging to create a quad/hexa -copter is not outside the scope of reasonable interest.
+
+After a recent visit, Jan 18 2020, to a local Computer & Electronics store, I discovered that I could get a recreational WiFi controlled QuadCopter for $20:
+<https://cdn.discordapp.com/attachments/329665299681116191/674397287916765184/20200118_114256.jpg>
+While the quality of this copter is unknown to me, and my own ability to attach a raspberry pi to it parasitically may result in a colossal failure, it’s cheap enough that I’m considering prototyping with it.
+
+After some testing of the stock unit I may decide that the drone at this price point just isn’t worth the time to modify. Cheap RC toys were the bane of my childhood and I am fully prepared to be disappointed by the $20 drone.
+Carry Weight vs Battery Life, my ability to keep the drone balanced, and the cost of maintaining a 3G connection on the drone are going to be the limiters if the $20 copter is worth using.
+ 
+Regardless of whether or not the drone is worth outfitting with a fully loaded Pi and rebalancing it for flight, it might be still be worth my time to practice attaching JUST a Pi Zero to the copter to experiment with and debug programs relating to thrusting/operating each of the individual propellers. Because that’s about a 35$ project for the drone, a pi zero, power supply for the pi, and some wires and solder.
+
+I haven’t tested any of the USB GPS Dongles yet but $50 seems to be on the higher end of pricing and thus a safe over estimate.
+
+
+< $50 	-Pi Zero W (Full-Kit)
+< 50$ 	- GPS Dongle
+15$	- monitor mode wireless adapter
+20$	- drone
+10$ 	- Adafruit Industries BMP280 I2C/SPI Barometric Pressure & Altitude Sensor *
+~<50$ 	- GSM (Global System for Mobile Communications) (+++ service charges)
+
+Total: ~200$ + time + cell service cost
+
+
+*It may be possible to pull data from the chip already onboard the drone. 
+The drone’s ability to determine its own altitude could be used to reduce data consumption by scripting its path rather than manually controlling the drone. An elevation map / LiDar coupled with the drone being able to detect its own altitude should be enough to keep it from crashing into buildings, and even allow it to land safely on top of them to recalibrate itself.
+I was not sure how a drone would go about testing its own altitude, figured that a barometer probably wouldn’t be accurate enough. Called up Scott who believes that most digital barometers will be ‘accurate enough’ so long as they are calibrated before takeoff. I am mildly skeptical and think it would be wise to implement some form of redundancy check to force the drone to land and recalibrate if necessary.
