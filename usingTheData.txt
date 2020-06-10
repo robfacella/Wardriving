@@ -1,0 +1,23 @@
+Over time I have gathered an enourmous amount of data, which I have yet to process.
+What's the point of collecting data if you never use it for anything? I reference my maps from time to time, just to use the data as a talking point; yet numerous applications can be used to distill usable information from all of this data.
+
+The wiGLE Database contains table entries for each device I've scanned, should have columns such as:
+Network Name  (SSID)
+MAC Address   (BSSID)
+Security Type (WPA2/WPA/WEP)
+Network Type  (WiFi/BlueTooth/Cell)
+Capabilities
+Channel
+Longitude
+Latitude
+
+Number of Observations
+
+From which the Network can be plotted onto a map, and distance from other points can be calculated.
+
+#####################
+Can filter the Database to find Open Networks within a given radius of some point. With results fed through Google Maps or an API with similar features.
+Free and Open Access Points can be used to remotely run server nodes. (a VPN via a RaspberryPi-ZeroW, for example; though considering a public network is somewhere you would generally want to USE a VPN, it may have a limited use case as an exit node)
+
+Using wiGLE to determine optimal locations from which to run kismet.
+wiGLE as initial recon --> kismet for more detailed surveillance
